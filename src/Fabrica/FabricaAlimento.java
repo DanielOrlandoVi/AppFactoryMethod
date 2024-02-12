@@ -1,6 +1,6 @@
 
-package FabricaAbstracta;
-import ProductoConcreto.Alimento;
+package Fabrica;
+import Producto.Alimento;
 
 public abstract class FabricaAlimento{
 

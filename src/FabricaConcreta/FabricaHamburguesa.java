@@ -1,7 +1,7 @@
 
 package FabricaConcreta;
-import FabricaAbstracta.FabricaAlimento;
-import ProductoConcreto.Alimento;
+import Fabrica.FabricaAlimento;
+import Producto.Alimento;
 import ProductoConcreto.Hamburguesa;
 
 public class FabricaHamburguesa extends FabricaAlimento{

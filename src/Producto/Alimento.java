@@ -1,5 +1,5 @@
 
-package ProductoConcreto;
+package Producto;
 
 
 public interface Alimento {

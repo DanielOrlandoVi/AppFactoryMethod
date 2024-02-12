@@ -1,6 +1,8 @@
 
 package ProductoConcreto;
 
+import Producto.Alimento;
+
 public class Pizza implements Alimento{
     
     @Override
