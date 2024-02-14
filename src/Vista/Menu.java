@@ -15,7 +15,7 @@ public class Menu {
     public int mostrar_Menu(){
         String opcion_texto = JOptionPane.showInputDialog("¡Bienvenido al restaurante de comida rápida!" 
                 + "\n" + "Seleccione el alimento que desea llevar" + "\n" +
-                "1. Hamburguesa" + "\n" + "2.Pizza" + "\n" + "3. Salir");
+                "1. Hamburguesa" + "\n" + "2. Pizza" + "\n" + "3. Salir");
         if (opcion_texto == null) {
         	System.exit(0);
         }
@@ -44,10 +44,6 @@ public class Menu {
         }
         if (opcion == 3){
             System.exit(0);
-        }
-        else {
-        	JOptionPane.showMessageDialog(null, "Error: Ingrese un número válido.", "Error", JOptionPane.ERROR_MESSAGE);
-            mostrar_Menu();
         }
         
  
