@@ -2,8 +2,12 @@
 package Vista;
 
 import javax.swing.JOptionPane;
-import ProductoConcreto.Hamburguesa;
+import FabricaConcreta.FabricaHamburguesa;
+import FabricaConcreta.FabricaPizza;
 import ProductoConcreto.Pizza;
+import ProductoConcreto.Hamburguesa;
+import Producto.Alimento;
+
 
 public class Menu {
     int opcion;
@@ -26,8 +30,11 @@ public class Menu {
     }
     
     public void mostrardatos(){
-        Pizza pizza = new Pizza();
-        Hamburguesa hamburguesa = new Hamburguesa();
+    	FabricaPizza fabricapizza = new FabricaPizza();
+    	FabricaHamburguesa fabricahamburguesa = new FabricaHamburguesa();
+    	Alimento pizza = fabricapizza.crearAlimento();
+    	Alimento hamburguesa = fabricahamburguesa.crearAlimento();
+
         
         if (opcion == 1){
             JOptionPane.showMessageDialog(null, hamburguesa.getIngredientes());
